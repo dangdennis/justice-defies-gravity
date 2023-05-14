@@ -1,14 +1,13 @@
 'use client'
 
-import { useState } from 'react';
 import { Switch } from '@headlessui/react';
+import { useState } from 'react';
 
 export function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ')
 }
 
-export function PanelSubtext(props: { text: string; }) {
-  'use client';
+export function PanelSubtext(props: { text: string }) {
   const [visible, setVisible] = useState(false);
 
   return (
